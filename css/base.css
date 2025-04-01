@@ -1,0 +1,30 @@
+:root {
+  font-family: "Inter Tight", sans-serif;
+  background: #1c1d20;
+  cards: #242527;
+  arrow: #3b3b3b;
+  button-text: #ed3b44;
+  main-text: #fafafa;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+p {
+  margin: 0;
+}

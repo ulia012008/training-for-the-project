@@ -1,0 +1,67 @@
+.accordion-container {
+    width: 350px;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ac {
+    border-bottom: 1px solid #444;
+    list-style: none;
+}
+
+.ac-header {
+    margin: 0;
+}
+
+.ac-trigger {
+    width: 100%;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ac-trigger:hover {
+    background: #222;
+}
+
+.ac-panel {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+
+.ac-text {
+    padding: 15px;
+    color: #aaa;
+    font-size: 14px;
+    list-style: none;
+}
+
+
+.ac-panel.open {
+    display: block;
+    max-height: 500px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.ac-panel.open+.ac-header .arrow {
+    transform: rotate(180deg);
+    /* Стрелка вверх */
+}

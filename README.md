@@ -1,1 +1,2 @@
-# training-for-the-project
+# GreenHarvest
+team project
