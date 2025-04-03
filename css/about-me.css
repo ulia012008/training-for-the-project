@@ -4,13 +4,17 @@
     --arrow: #3b3b3b;
     --button-text: #ed3b44;
     --main-text: #fafafa;
-    font-family: "Inter Tight",
-        sans-serif;
+    --font-family: "Inter Tight", sans-serif;
+}
+
+button {
+    padding: 0;
 }
 
 img {
     width: 100%;
     height: auto;
+    margin-bottom: 32px;
 
 }
 
@@ -22,7 +26,9 @@ img {
 .about-me-text-container {
     border-radius: 24px;
     height: 500px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background: var(--cards);
 
     margin-bottom: 16px;
@@ -52,10 +58,7 @@ img {
 
 
 .accordion-container {
-
-    background: #111;
-    color: #fff;
-    border-radius: 5px;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -70,7 +73,7 @@ img {
 
 .ac-trigger {
     width: 100%;
-    padding: 15px;
+    height: 68px;
     background: none;
     border: none;
     font-family: var(--font-family);
@@ -99,10 +102,13 @@ img {
 
 
 .ac-text {
-    padding: 15px;
-    color: #aaa;
-    font-size: 14px;
-    list-style: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    width: 343px;
 }
 
 
